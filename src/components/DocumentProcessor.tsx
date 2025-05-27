@@ -110,6 +110,26 @@ export function DocumentProcessor() {
                 styles={{ input: { backgroundColor: 'white' } }}
               />
             </Grid.Col>
+            <Grid.Col span={6}>
+              <TextInput
+                label="Project"
+                placeholder="AI will detect project"
+                value={result?.project || ''}
+                readOnly
+                leftSection={<IconFileAnalytics size={16} style={{ color: 'var(--mantine-color-blue-6)' }} />}
+                styles={{ input: { backgroundColor: 'white' } }}
+              />
+            </Grid.Col>
+            <Grid.Col span={6}>
+              <TextInput
+                label="Document Type"
+                placeholder="AI will detect document type"
+                value={result?.document_type || ''}
+                readOnly
+                leftSection={<IconFileAnalytics size={16} style={{ color: 'var(--mantine-color-blue-6)' }} />}
+                styles={{ input: { backgroundColor: 'white' } }}
+              />
+            </Grid.Col>
           </Grid>
         </Paper>
 
